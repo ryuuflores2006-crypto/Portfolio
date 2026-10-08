@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark John Flores | IT Professional</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Theme Toggle & Back to Top -->
+    <button id="theme-toggle" class="glass-button" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+    <button id="back-to-top" class="glass-button" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Navigation -->
+    <header id="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">MJ<span>.Flores</span></a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+        <div class="hero-bg-animated">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+        <div class="container hero-container grid-2">
+            <div class="hero-content fade-in">
+                <p class="greeting">Hello, World! I am</p>
+                <h1 class="name">Mark John <span>Flores</span></h1>
+                <h2 class="title">A passionate <span id="typing-text"></span><span class="cursor">|</span></h2>
+                <p class="description">
+                    Driven by the challenge of transforming messy, complex processes into clean, maintainable, and high-performing code.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper fade-in delay-1">
+                <div class="hero-image glass-card">
+                    <!-- Placeholder for actual profile picture -->
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>About <span>Me</span></h2>
+                <p>My journey in tech is fueled by a mix of disciplined execution and creative problem-solving.</p>
+            </div>
+            <div class="about-content grid-2 reveal delay-1">
+                <div class="about-text glass-card">
+                    <h3>IT Specialist & Developer</h3>
+                    <p>Hello! I'm Mark John Flores, a driven IT Specialist from Dullao, Bambang, Nueva Vizcaya. Currently pursuing my Bachelor of Science in Information Technology at Kings College of the Philippines (Expected 2028).</p>
+                    <p>I specialize in building full-stack web applications, engineering robust databases, and providing top-tier technical and hardware support. My hybrid expertise allows me to understand systems from the hardware foundation up to the software interface layer.</p>
+                    <div class="contact-info-short">
+                        <p><i class="fas fa-envelope"></i> ryuuflores2006@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> 09460086428</p>
+                    </div>
+                </div>
+                <div class="about-stats grid-2">
+                    <div class="stat-box glass-card">
+                        <h3 class="counter" data-target="3">0</h3>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div class="stat-box glass-card">
+                        <h3 class="counter" data-target="15">0</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-box glass-card">
+                        <h3 class="counter" data-target="12">0</h3>
+                        <p>Technologies Used</p>
+                    </div>
+                    <div class="stat-box glass-card">
+                        <h3 class="counter" data-target="4">0</h3>
+                        <p>Systems Completed</p>
+                    </div>
+                    <div class="stat-box glass-card span-2 highlight">
+                        <div class="achievements">
+                            <span class="badge"><i class="fas fa-trophy"></i> Hackathon Champion</span>
+                            <span class="badge"><i class="fas fa-award"></i> Civil Service Exam Passer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section bg-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>My <span>Skills</span></h2>
+                <p>A comprehensive toolkit for full-stack development and IT infrastructure.</p>
+            </div>
+            <div class="skills-grid reveal delay-1">
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-code"></i> Languages & Web</h3>
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>C#</span>
+                        <span>Visual Basic (.NET)</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-database"></i> Databases & Tools</h3>
+                    <div class="skill-tags">
+                        <span>MySQL</span>
+                        <span>phpMyAdmin</span>
+                        <span>XAMPP</span>
+                        <span>Visual Studio</span>
+                        <span>Git & GitHub</span>
+                        <span>GitHub Pages</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-server"></i> Technical & Hardware</h3>
+                    <div class="skill-tags">
+                        <span>PC Assembly</span>
+                        <span>Hardware Troubleshooting</span>
+                        <span>Device Flashing</span>
+                        <span>Firmware Servicing</span>
+                        <span>NFC Tag Config</span>
+                        <span>Networking</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-photo-video"></i> Multimedia</h3>
+                    <div class="skill-tags">
+                        <span>CapCut Editing</span>
+                        <span>Audio/Video Processing</span>
+                        <span>Content Preparation</span>
+                        <span>UI/UX Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Featured <span>Projects</span></h2>
+                <p>Showcasing my latest software, web, and system developments.</p>
+            </div>
+            
+            <div class="project-filters reveal delay-1">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web App</button>
+                <button class="filter-btn" data-filter="desktop">Desktop App</button>
+                <button class="filter-btn" data-filter="system">Systems</button>
+            </div>
+
+            <div class="projects-grid reveal delay-2">
+                <!-- Project 1 -->
+                <div class="project-card glass-card" data-category="system web">
+                    <div class="project-img">
+                        <div class="img-placeholder"><i class="fas fa-boxes"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Inventory & Stock Management</h3>
+                        <p>End-to-end inventory tracking system with real-time stock deductions, low-stock alerts, and admin dashboard reports.</p>
+                        <div class="tech-stack">
+                            <span>PHP</span><span>MySQL</span><span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card" data-category="web system">
+                    <div class="project-img">
+                        <div class="img-placeholder"><i class="fas fa-search-location"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Campus Lost & Found System</h3>
+                        <p>Full-stack web portal for reporting, cataloging, and claiming lost items on campus with image handling and status tracking.</p>
+                        <div class="tech-stack">
+                            <span>PHP</span><span>MySQL</span><span>XAMPP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card" data-category="desktop system">
+                    <div class="project-img">
+                        <div class="img-placeholder"><i class="fas fa-cash-register"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Restaurant POS System</h3>
+                        <p>Desktop Point of Sale application featuring role authentication, dynamic ordering, bill calculations, and daily transaction logs.</p>
+                        <div class="tech-stack">
+                            <span>C#</span><span>Visual Basic</span><span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glass-card" data-category="web">
+                    <div class="project-img">
+                        <div class="img-placeholder"><i class="fas fa-globe"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Interactive Web Portals</h3>
+                        <p>Lightweight, responsive interactive web pages designed with clean UI/UX principles and hosted live via GitHub Pages.</p>
+                        <div class="tech-stack">
+                            <span>HTML5</span><span>CSS3</span><span>JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card glass-card" data-category="system">
+                    <div class="project-img">
+                        <div class="img-placeholder"><i class="fas fa-mobile-alt"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Device Diagnostics Utility</h3>
+                        <p>Internal tool documentation and scripts for mobile device firmware flashing, software-level repairs, and NFC configuration.</p>
+                        <div class="tech-stack">
+                            <span>Python</span><span>Hardware</span><span>NFC</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fab fa-github"></i> Documentation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card glass-card" data-category="web">
+                    <div class="project-img">
+                        <div class="img-placeholder"><i class="fas fa-user-graduate"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Academic Resource Dashboard</h3>
+                        <p>Centralized hub built during coursework to track database management models, OOP milestones, and multimedia files.</p>
+                        <div class="tech-stack">
+                            <span>PHP</span><span>MySQL</span><span>CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section bg-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>My <span>Services</span></h2>
+                <p>Delivering comprehensive IT solutions for modern problems.</p>
+            </div>
+            <div class="services-grid reveal delay-1">
+                <div class="service-card glass-card">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Responsive, fast, and modern front-end and back-end web applications tailored to your business needs.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <div class="service-icon"><i class="fas fa-database"></i></div>
+                    <h3>Database Development</h3>
+                    <p>Design, optimization, and management of secure relational databases using MySQL and phpMyAdmin.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>System Development</h3>
+                    <p>Custom desktop applications (C#/VB.NET), inventory management, and POS systems optimized for workflow efficiency.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Network Setup</h3>
+                    <p>Reliable configuration and troubleshooting of local networks to ensure seamless data flow and security.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <h3>IT & Hardware Support</h3>
+                    <p>PC assembly, hardware troubleshooting, OS installations, device flashing, and software-level repairs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Timeline Section -->
+    <section id="experience" class="timeline-section section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Journey & <span>Experience</span></h2>
+                <p>My academic and professional background in the tech industry.</p>
+            </div>
+            <div class="timeline reveal delay-1">
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fas fa-briefcase"></i></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date">Current</span>
+                        <h3>Freelance Technical & Hardware Support</h3>
+                        <h4>Self-Employed</h4>
+                        <p>Perform mobile device diagnostics, firmware flashing, and software repairs using specialized utility tools. Assist clients with PC hardware upgrades, compatibility checks, and OS installations.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fas fa-code-branch"></i></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date">Ongoing</span>
+                        <h3>Student Web & Software Developer</h3>
+                        <h4>Academic & Independent Projects</h4>
+                        <p>Built, tested, and maintained responsive web apps and desktop GUI systems. Designed relational databases, wrote backend CRUD operations, and handled frontend integrations.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date">Expected Graduation: 2028</span>
+                        <h3>BS in Information Technology</h3>
+                        <h4>Kings College of the Philippines</h4>
+                        <p>Focusing on Database Management Systems, Web Development, Object-Oriented Programming, Multimedia Systems, and Information Security.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fas fa-certificate"></i></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date">Achieved</span>
+                        <h3>Certifications & Awards</h3>
+                        <h4>Professional Milestones</h4>
+                        <p>Civil Service Exam Passer. Recognized as a Hackathon Champion for innovative problem-solving and rapid prototype development under pressure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section bg-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Get In <span>Touch</span></h2>
+                <p>Have a project in mind or need technical support? Let's talk.</p>
+            </div>
+            <div class="contact-wrapper grid-2 reveal delay-1">
+                <div class="contact-info">
+                    <div class="info-card glass-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Me</h3>
+                            <p>ryuuflores2006@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-card glass-card">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Call Me</h3>
+                            <p>09460086428</p>
+                        </div>
+                    </div>
+                    <div class="info-card glass-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Dullao, Bambang, Nueva Vizcaya</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form glass-card">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">
+                        <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <div id="form-message" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>MJ<span>.Flores</span></h2>
+                    <p>IT Specialist & Developer</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mark John Flores. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
