@@ -71,11 +71,34 @@
                 </div>
             </div>
             <div class="hero-image-wrapper fade-in delay-1">
-                <div class="hero-image glass-card tilt-card">
-                    <img src="profile.jpg" alt="Mark John Flores" class="profile-img">
+                <!-- 3D NFC Flip Card -->
+                <div class="flip-card tilt-card">
+                    <div class="flip-card-inner">
+                        <!-- Front Side: Your Image -->
+                        <div class="flip-card-front glass-card">
+                            <img src="profile.jpg" alt="Mark John Flores" class="profile-img">
+                        </div>
+                        <!-- Back Side: Glowing NFC Smart Card -->
+                        <div class="flip-card-back glass-card">
+                            <div class="nfc-content">
+                                <i class="fas fa-wifi nfc-logo"></i>
+                                <h3 class="nfc-title">NFC SMART CARD</h3>
+                                
+                                <div class="nfc-scan-container">
+                                    <!-- The Laser Scan Line -->
+                                    <div class="nfc-scan-line"></div>
+                                    <!-- A real, working QR code linking to your Vercel site! -->
+                                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://markjohnfloresportfolio.vercel.app" alt="QR Code" class="nfc-qr">
+                                </div>
+                                
+                                <p class="nfc-name">Mark John Flores</p>
+                                <p class="nfc-role">IT Specialist</p>
+                                <p class="nfc-tap-text">TAP DEVICE TO CONNECT</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- About Section -->

@@ -371,3 +371,133 @@ header.scrolled .navbar { padding: 5px 20px; }
     .filter-btn { width: 100%; }
     .contact-form { padding: 25px 15px; }
 }
+/* =========================================
+   3D INTERACTIVE NFC SMART CARD
+   ========================================= */
+.flip-card {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 2 / 3; /* Realistic ID badge / Smart Card ratio */
+    perspective: 1000px; /* Gives the 3D depth effect */
+    margin: 0 auto;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d; /* Allows the front and back to exist in 3D space */
+}
+
+/* Flips the card when you hover over it */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Front Side Styling */
+.flip-card-front {
+    padding: 0;
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+/* Back Side (NFC Card) Styling */
+.flip-card-back {
+    transform: rotateY(180deg); /* Starts flipped backwards */
+    background: linear-gradient(135deg, rgba(15,23,42,0.95), rgba(14,165,233,0.2));
+    border: 2px solid var(--accent-color);
+    box-shadow: inset 0 0 30px rgba(14,165,233,0.3), 0 0 20px rgba(14,165,233,0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* NFC Internal Content */
+.nfc-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.nfc-logo {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    transform: rotate(90deg); /* Rotates the wifi icon to look like NFC */
+    margin-bottom: 10px;
+    text-shadow: 0 0 15px var(--accent-color);
+}
+
+.nfc-title {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.nfc-scan-container {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+.nfc-qr {
+    width: 100%;
+    height: 100%;
+}
+
+/* The Laser Scanner Animation */
+.nfc-scan-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-color), 0 0 20px var(--accent-color);
+    animation: scan 2s linear infinite alternate;
+    z-index: 2;
+}
+
+.nfc-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.nfc-role {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.nfc-tap-text {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: var(--text-secondary);
+    animation: blink 1.5s infinite;
+}
+
+@keyframes scan {
+    0% { top: 0; }
+    100% { top: calc(100% - 4px); }
+}
