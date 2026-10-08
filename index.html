@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- CUSTOM GLOWING CURSOR -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
     <!-- AMBIENT GLASSMORPHISM BACKGROUND -->
     <div class="ambient-bg">
         <div class="ambient-blob color-1"></div>
@@ -48,7 +52,7 @@
     <section id="home" class="hero section">
         <div class="container hero-container grid-2">
             <div class="hero-content fade-in">
-                <div class="glass-card hero-glass-panel">
+                <div class="glass-card hero-glass-panel tilt-card">
                     <p class="greeting">Hello, World! I am</p>
                     <h1 class="name">Mark John <span>Flores</span></h1>
                     <h2 class="title">A passionate <span id="typing-text"></span><span class="cursor">|</span></h2>
@@ -67,7 +71,7 @@
                 </div>
             </div>
             <div class="hero-image-wrapper fade-in delay-1">
-                <div class="hero-image glass-card">
+                <div class="hero-image glass-card tilt-card">
                     <img src="profile.jpg" alt="Mark John Flores" class="profile-img">
                 </div>
             </div>
@@ -82,7 +86,7 @@
                 <p>My journey in tech is fueled by a mix of disciplined execution and creative problem-solving.</p>
             </div>
             <div class="about-content grid-2 reveal delay-1">
-                <div class="about-text glass-card">
+                <div class="about-text glass-card tilt-card">
                     <h3>IT Specialist & Developer</h3>
                     <p>Hello! I'm Mark John Flores, a driven IT Specialist from Dullao, Bambang, Nueva Vizcaya. Currently pursuing my Bachelor of Science in Information Technology at Kings College of the Philippines (Expected 2028).</p>
                     <p>I specialize in building full-stack web applications, engineering robust databases, and providing top-tier technical and hardware support. My hybrid expertise allows me to understand systems from the hardware foundation up to the software interface layer.</p>
@@ -92,23 +96,23 @@
                     </div>
                 </div>
                 <div class="about-stats grid-2">
-                    <div class="stat-box glass-card">
+                    <div class="stat-box glass-card tilt-card">
                         <h3 class="counter" data-target="3">0</h3>
                         <p>Years of Experience</p>
                     </div>
-                    <div class="stat-box glass-card">
+                    <div class="stat-box glass-card tilt-card">
                         <h3 class="counter" data-target="15">0</h3>
                         <p>Projects Completed</p>
                     </div>
-                    <div class="stat-box glass-card">
+                    <div class="stat-box glass-card tilt-card">
                         <h3 class="counter" data-target="12">0</h3>
                         <p>Technologies Used</p>
                     </div>
-                    <div class="stat-box glass-card">
+                    <div class="stat-box glass-card tilt-card">
                         <h3 class="counter" data-target="4">0</h3>
                         <p>Systems Completed</p>
                     </div>
-                    <div class="stat-box glass-card span-2 highlight">
+                    <div class="stat-box glass-card tilt-card span-2 highlight">
                         <div class="achievements">
                             <span class="badge glass-badge"><i class="fas fa-trophy"></i> Hackathon Champion</span>
                             <span class="badge glass-badge"><i class="fas fa-award"></i> Civil Service Exam Passer</span>
@@ -127,28 +131,28 @@
                 <p>A comprehensive toolkit for full-stack development and IT infrastructure.</p>
             </div>
             <div class="skills-grid reveal delay-1">
-                <div class="skill-category glass-card">
+                <div class="skill-category glass-card tilt-card">
                     <h3><i class="fas fa-code"></i> Languages & Web</h3>
                     <div class="skill-tags">
                         <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
                         <span>PHP</span><span>C#</span><span>VB.NET</span><span>Python</span>
                     </div>
                 </div>
-                <div class="skill-category glass-card">
+                <div class="skill-category glass-card tilt-card">
                     <h3><i class="fas fa-database"></i> Databases & Tools</h3>
                     <div class="skill-tags">
                         <span>MySQL</span><span>phpMyAdmin</span><span>XAMPP</span>
                         <span>Visual Studio</span><span>Git</span><span>GitHub Pages</span>
                     </div>
                 </div>
-                <div class="skill-category glass-card">
+                <div class="skill-category glass-card tilt-card">
                     <h3><i class="fas fa-server"></i> Technical Support</h3>
                     <div class="skill-tags">
                         <span>PC Assembly</span><span>Hardware</span><span>Device Flashing</span>
                         <span>Firmware</span><span>NFC Tags</span><span>Networking</span>
                     </div>
                 </div>
-                <div class="skill-category glass-card">
+                <div class="skill-category glass-card tilt-card">
                     <h3><i class="fas fa-photo-video"></i> Multimedia</h3>
                     <div class="skill-tags">
                         <span>CapCut</span><span>Audio/Video</span>
@@ -176,7 +180,7 @@
 
             <div class="projects-grid reveal delay-2">
                 <!-- Project 1 -->
-                <div class="project-card glass-card" data-category="system web">
+                <div class="project-card glass-card tilt-card" data-category="system web">
                     <div class="project-img">
                         <div class="img-placeholder"><i class="fas fa-boxes"></i></div>
                     </div>
@@ -194,7 +198,7 @@
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-card glass-card" data-category="web system">
+                <div class="project-card glass-card tilt-card" data-category="web system">
                     <div class="project-img">
                         <div class="img-placeholder"><i class="fas fa-search-location"></i></div>
                     </div>
@@ -212,7 +216,7 @@
                 </div>
 
                 <!-- Project 3 -->
-                <div class="project-card glass-card" data-category="desktop system">
+                <div class="project-card glass-card tilt-card" data-category="desktop system">
                     <div class="project-img">
                         <div class="img-placeholder"><i class="fas fa-cash-register"></i></div>
                     </div>
@@ -229,7 +233,7 @@
                 </div>
 
                 <!-- Project 4 -->
-                <div class="project-card glass-card" data-category="web">
+                <div class="project-card glass-card tilt-card" data-category="web">
                     <div class="project-img">
                         <div class="img-placeholder"><i class="fas fa-globe"></i></div>
                     </div>
@@ -247,7 +251,7 @@
                 </div>
 
                 <!-- Project 5 -->
-                <div class="project-card glass-card" data-category="system">
+                <div class="project-card glass-card tilt-card" data-category="system">
                     <div class="project-img">
                         <div class="img-placeholder"><i class="fas fa-mobile-alt"></i></div>
                     </div>
@@ -264,7 +268,7 @@
                 </div>
 
                 <!-- Project 6 -->
-                <div class="project-card glass-card" data-category="web">
+                <div class="project-card glass-card tilt-card" data-category="web">
                     <div class="project-img">
                         <div class="img-placeholder"><i class="fas fa-user-graduate"></i></div>
                     </div>
@@ -292,27 +296,27 @@
                 <p>Delivering comprehensive IT solutions for modern problems.</p>
             </div>
             <div class="services-grid reveal delay-1">
-                <div class="service-card glass-card">
+                <div class="service-card glass-card tilt-card">
                     <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
                     <h3>Web Development</h3>
                     <p>Responsive, fast, and modern front-end and back-end web applications tailored to your business needs.</p>
                 </div>
-                <div class="service-card glass-card">
+                <div class="service-card glass-card tilt-card">
                     <div class="service-icon"><i class="fas fa-database"></i></div>
                     <h3>Database Development</h3>
                     <p>Design, optimization, and management of secure relational databases using MySQL and phpMyAdmin.</p>
                 </div>
-                <div class="service-card glass-card">
+                <div class="service-card glass-card tilt-card">
                     <div class="service-icon"><i class="fas fa-cogs"></i></div>
                     <h3>System Development</h3>
                     <p>Custom desktop applications (C#/VB.NET), inventory management, and POS systems optimized for workflows.</p>
                 </div>
-                <div class="service-card glass-card">
+                <div class="service-card glass-card tilt-card">
                     <div class="service-icon"><i class="fas fa-network-wired"></i></div>
                     <h3>Network Setup</h3>
                     <p>Reliable configuration and troubleshooting of local networks to ensure seamless data flow and security.</p>
                 </div>
-                <div class="service-card glass-card">
+                <div class="service-card glass-card tilt-card">
                     <div class="service-icon"><i class="fas fa-tools"></i></div>
                     <h3>IT & Hardware Support</h3>
                     <p>PC assembly, hardware troubleshooting, OS installations, device flashing, and software-level repairs.</p>
@@ -331,7 +335,7 @@
             <div class="timeline reveal delay-1">
                 <div class="timeline-item">
                     <div class="timeline-dot"><i class="fas fa-briefcase"></i></div>
-                    <div class="timeline-content glass-card">
+                    <div class="timeline-content glass-card tilt-card">
                         <span class="date glass-badge">Current</span>
                         <h3>Freelance Technical & Hardware Support</h3>
                         <h4>Self-Employed</h4>
@@ -341,7 +345,7 @@
 
                 <div class="timeline-item">
                     <div class="timeline-dot"><i class="fas fa-code-branch"></i></div>
-                    <div class="timeline-content glass-card">
+                    <div class="timeline-content glass-card tilt-card">
                         <span class="date glass-badge">Ongoing</span>
                         <h3>Student Web & Software Developer</h3>
                         <h4>Academic & Independent Projects</h4>
@@ -351,21 +355,11 @@
 
                 <div class="timeline-item">
                     <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="timeline-content glass-card">
+                    <div class="timeline-content glass-card tilt-card">
                         <span class="date glass-badge">Expected Graduation: 2028</span>
                         <h3>BS in Information Technology</h3>
                         <h4>Kings College of the Philippines</h4>
                         <p>Focusing on Database Management Systems, Web Development, Object-Oriented Programming, Multimedia Systems, and Information Security.</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"><i class="fas fa-certificate"></i></div>
-                    <div class="timeline-content glass-card">
-                        <span class="date glass-badge">Achieved</span>
-                        <h3>Certifications & Awards</h3>
-                        <h4>Professional Milestones</h4>
-                        <p>Civil Service Exam Passer. Recognized as a Hackathon Champion for innovative problem-solving and rapid prototype development under pressure.</p>
                     </div>
                 </div>
             </div>
@@ -381,30 +375,30 @@
             </div>
             <div class="contact-wrapper grid-2 reveal delay-1">
                 <div class="contact-info">
-                    <div class="info-card glass-card">
+                    <div class="info-card glass-card tilt-card">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h3>Email Me</h3>
                             <p>ryuuflores2006@gmail.com</p>
                         </div>
                     </div>
-                    <div class="info-card glass-card">
+                    <div class="info-card glass-card tilt-card">
                         <i class="fas fa-phone"></i>
                         <div>
                             <h3>Call Me</h3>
                             <p>09460086428</p>
                         </div>
                     </div>
-                    <div class="info-card glass-card">
-                        <i class="fas fa-map-marker-alt"></i>
+                    <div class="info-card glass-card tilt-card" title="Hint: Type 'admin' on your keyboard anywhere on this site...">
+                        <i class="fas fa-terminal"></i>
                         <div>
-                            <h3>Location</h3>
-                            <p>Dullao, Bambang, Nueva Vizcaya</p>
+                            <h3>System Access</h3>
+                            <p>Restricted (Type 'admin')</p>
                         </div>
                     </div>
                 </div>
 
-                <form id="contact-form" class="contact-form glass-card">
+                <form id="contact-form" class="contact-form glass-card tilt-card">
                     <div class="form-group">
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
                     </div>
@@ -445,6 +439,30 @@
             </div>
         </div>
     </footer>
+
+   
+
+    <div id="terminal-modal" class="terminal-overlay">
+        <div class="terminal-window glass-card">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="close-btn" id="close-terminal"></span>
+                    <span class="min-btn"></span>
+                    <span class="max-btn"></span>
+                </div>
+                <div class="terminal-title">admin@mjflores: ~</div>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+                <div class="terminal-line" style="color: var(--accent-color);">Welcome to MJOS v1.0.0.</div>
+                <div class="terminal-line">Authentication successful. Type 'help' for available commands.</div>
+                <br>
+            </div>
+            <div class="terminal-input-line">
+                <span class="prompt">admin@mjflores:~$</span>
+                <input type="text" id="terminal-input" autocomplete="off" spellcheck="false">
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
