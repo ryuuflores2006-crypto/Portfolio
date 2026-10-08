@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- AMBIENT GLASSMORPHISM BACKGROUND -->
+    <div class="ambient-bg">
+        <div class="ambient-blob color-1"></div>
+        <div class="ambient-blob color-2"></div>
+        <div class="ambient-blob color-3"></div>
+        <div class="ambient-blob color-4"></div>
+    </div>
+
     <!-- Theme Toggle & Back to Top -->
     <button id="theme-toggle" class="glass-button" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
     <button id="back-to-top" class="glass-button" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
@@ -38,31 +46,28 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero section">
-        <div class="hero-bg-animated">
-            <div class="blob blob-1"></div>
-            <div class="blob blob-2"></div>
-        </div>
         <div class="container hero-container grid-2">
             <div class="hero-content fade-in">
-                <p class="greeting">Hello, World! I am</p>
-                <h1 class="name">Mark John <span>Flores</span></h1>
-                <h2 class="title">A passionate <span id="typing-text"></span><span class="cursor">|</span></h2>
-                <p class="description">
-                    Driven by the challenge of transforming messy, complex processes into clean, maintainable, and high-performing code.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
-                </div>
-                <div class="social-links">
-                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <div class="glass-card hero-glass-panel">
+                    <p class="greeting">Hello, World! I am</p>
+                    <h1 class="name">Mark John <span>Flores</span></h1>
+                    <h2 class="title">A passionate <span id="typing-text"></span><span class="cursor">|</span></h2>
+                    <p class="description">
+                        Driven by the challenge of transforming messy, complex processes into clean, maintainable, and high-performing code.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="hero-image-wrapper fade-in delay-1">
                 <div class="hero-image glass-card">
-                    <!-- Your Profile Image -->
                     <img src="profile.jpg" alt="Mark John Flores" class="profile-img">
                 </div>
             </div>
@@ -105,8 +110,8 @@
                     </div>
                     <div class="stat-box glass-card span-2 highlight">
                         <div class="achievements">
-                            <span class="badge"><i class="fas fa-trophy"></i> Hackathon Champion</span>
-                            <span class="badge"><i class="fas fa-award"></i> Civil Service Exam Passer</span>
+                            <span class="badge glass-badge"><i class="fas fa-trophy"></i> Hackathon Champion</span>
+                            <span class="badge glass-badge"><i class="fas fa-award"></i> Civil Service Exam Passer</span>
                         </div>
                     </div>
                 </div>
@@ -125,44 +130,29 @@
                 <div class="skill-category glass-card">
                     <h3><i class="fas fa-code"></i> Languages & Web</h3>
                     <div class="skill-tags">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                        <span>PHP</span>
-                        <span>C#</span>
-                        <span>Visual Basic (.NET)</span>
-                        <span>Python</span>
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        <span>PHP</span><span>C#</span><span>VB.NET</span><span>Python</span>
                     </div>
                 </div>
                 <div class="skill-category glass-card">
                     <h3><i class="fas fa-database"></i> Databases & Tools</h3>
                     <div class="skill-tags">
-                        <span>MySQL</span>
-                        <span>phpMyAdmin</span>
-                        <span>XAMPP</span>
-                        <span>Visual Studio</span>
-                        <span>Git & GitHub</span>
-                        <span>GitHub Pages</span>
+                        <span>MySQL</span><span>phpMyAdmin</span><span>XAMPP</span>
+                        <span>Visual Studio</span><span>Git</span><span>GitHub Pages</span>
                     </div>
                 </div>
                 <div class="skill-category glass-card">
-                    <h3><i class="fas fa-server"></i> Technical & Hardware</h3>
+                    <h3><i class="fas fa-server"></i> Technical Support</h3>
                     <div class="skill-tags">
-                        <span>PC Assembly</span>
-                        <span>Hardware Troubleshooting</span>
-                        <span>Device Flashing</span>
-                        <span>Firmware Servicing</span>
-                        <span>NFC Tag Config</span>
-                        <span>Networking</span>
+                        <span>PC Assembly</span><span>Hardware</span><span>Device Flashing</span>
+                        <span>Firmware</span><span>NFC Tags</span><span>Networking</span>
                     </div>
                 </div>
                 <div class="skill-category glass-card">
                     <h3><i class="fas fa-photo-video"></i> Multimedia</h3>
                     <div class="skill-tags">
-                        <span>CapCut Editing</span>
-                        <span>Audio/Video Processing</span>
-                        <span>Content Preparation</span>
-                        <span>UI/UX Design</span>
+                        <span>CapCut</span><span>Audio/Video</span>
+                        <span>Content Prep</span><span>UI/UX</span>
                     </div>
                 </div>
             </div>
@@ -178,10 +168,10 @@
             </div>
             
             <div class="project-filters reveal delay-1">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web App</button>
-                <button class="filter-btn" data-filter="desktop">Desktop App</button>
-                <button class="filter-btn" data-filter="system">Systems</button>
+                <button class="filter-btn glass-card active" data-filter="all">All</button>
+                <button class="filter-btn glass-card" data-filter="web">Web App</button>
+                <button class="filter-btn glass-card" data-filter="desktop">Desktop App</button>
+                <button class="filter-btn glass-card" data-filter="system">Systems</button>
             </div>
 
             <div class="projects-grid reveal delay-2">
@@ -192,12 +182,12 @@
                     </div>
                     <div class="project-info">
                         <h3>Inventory & Stock Management</h3>
-                        <p>End-to-end inventory tracking system with real-time stock deductions, low-stock alerts, and admin dashboard reports.</p>
+                        <p>End-to-end inventory tracking system with real-time stock deductions, low-stock alerts, and reports.</p>
                         <div class="tech-stack">
                             <span>PHP</span><span>MySQL</span><span>JavaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Demo</a>
                             <a href="#" class="btn btn-sm btn-primary"><i class="fab fa-github"></i> Source</a>
                         </div>
                     </div>
@@ -210,12 +200,12 @@
                     </div>
                     <div class="project-info">
                         <h3>Campus Lost & Found System</h3>
-                        <p>Full-stack web portal for reporting, cataloging, and claiming lost items on campus with image handling and status tracking.</p>
+                        <p>Full-stack web portal for reporting, cataloging, and claiming lost items on campus.</p>
                         <div class="tech-stack">
                             <span>PHP</span><span>MySQL</span><span>XAMPP</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Demo</a>
                             <a href="#" class="btn btn-sm btn-primary"><i class="fab fa-github"></i> Source</a>
                         </div>
                     </div>
@@ -228,7 +218,7 @@
                     </div>
                     <div class="project-info">
                         <h3>Restaurant POS System</h3>
-                        <p>Desktop Point of Sale application featuring role authentication, dynamic ordering, bill calculations, and daily transaction logs.</p>
+                        <p>Desktop POS application featuring role authentication, dynamic ordering, and bill calculations.</p>
                         <div class="tech-stack">
                             <span>C#</span><span>Visual Basic</span><span>MySQL</span>
                         </div>
@@ -245,12 +235,12 @@
                     </div>
                     <div class="project-info">
                         <h3>Interactive Web Portals</h3>
-                        <p>Lightweight, responsive interactive web pages designed with clean UI/UX principles and hosted live via GitHub Pages.</p>
+                        <p>Lightweight, responsive interactive web pages designed with clean UI/UX principles via GitHub Pages.</p>
                         <div class="tech-stack">
                             <span>HTML5</span><span>CSS3</span><span>JS</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Demo</a>
                             <a href="#" class="btn btn-sm btn-primary"><i class="fab fa-github"></i> Source</a>
                         </div>
                     </div>
@@ -263,12 +253,12 @@
                     </div>
                     <div class="project-info">
                         <h3>Device Diagnostics Utility</h3>
-                        <p>Internal tool documentation and scripts for mobile device firmware flashing, software-level repairs, and NFC configuration.</p>
+                        <p>Internal tool documentation for mobile device firmware flashing, repairs, and NFC configuration.</p>
                         <div class="tech-stack">
                             <span>Python</span><span>Hardware</span><span>NFC</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-sm btn-primary"><i class="fab fa-github"></i> Documentation</a>
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fab fa-github"></i> Docs</a>
                         </div>
                     </div>
                 </div>
@@ -280,12 +270,12 @@
                     </div>
                     <div class="project-info">
                         <h3>Academic Resource Dashboard</h3>
-                        <p>Centralized hub built during coursework to track database management models, OOP milestones, and multimedia files.</p>
+                        <p>Centralized hub built during coursework to track DB models, OOP milestones, and media files.</p>
                         <div class="tech-stack">
                             <span>PHP</span><span>MySQL</span><span>CSS3</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-sm btn-outline"><i class="fas fa-external-link-alt"></i> Demo</a>
                             <a href="#" class="btn btn-sm btn-primary"><i class="fab fa-github"></i> Source</a>
                         </div>
                     </div>
@@ -315,7 +305,7 @@
                 <div class="service-card glass-card">
                     <div class="service-icon"><i class="fas fa-cogs"></i></div>
                     <h3>System Development</h3>
-                    <p>Custom desktop applications (C#/VB.NET), inventory management, and POS systems optimized for workflow efficiency.</p>
+                    <p>Custom desktop applications (C#/VB.NET), inventory management, and POS systems optimized for workflows.</p>
                 </div>
                 <div class="service-card glass-card">
                     <div class="service-icon"><i class="fas fa-network-wired"></i></div>
@@ -339,11 +329,10 @@
                 <p>My academic and professional background in the tech industry.</p>
             </div>
             <div class="timeline reveal delay-1">
-                
                 <div class="timeline-item">
                     <div class="timeline-dot"><i class="fas fa-briefcase"></i></div>
                     <div class="timeline-content glass-card">
-                        <span class="date">Current</span>
+                        <span class="date glass-badge">Current</span>
                         <h3>Freelance Technical & Hardware Support</h3>
                         <h4>Self-Employed</h4>
                         <p>Perform mobile device diagnostics, firmware flashing, and software repairs using specialized utility tools. Assist clients with PC hardware upgrades, compatibility checks, and OS installations.</p>
@@ -353,7 +342,7 @@
                 <div class="timeline-item">
                     <div class="timeline-dot"><i class="fas fa-code-branch"></i></div>
                     <div class="timeline-content glass-card">
-                        <span class="date">Ongoing</span>
+                        <span class="date glass-badge">Ongoing</span>
                         <h3>Student Web & Software Developer</h3>
                         <h4>Academic & Independent Projects</h4>
                         <p>Built, tested, and maintained responsive web apps and desktop GUI systems. Designed relational databases, wrote backend CRUD operations, and handled frontend integrations.</p>
@@ -363,7 +352,7 @@
                 <div class="timeline-item">
                     <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
                     <div class="timeline-content glass-card">
-                        <span class="date">Expected Graduation: 2028</span>
+                        <span class="date glass-badge">Expected Graduation: 2028</span>
                         <h3>BS in Information Technology</h3>
                         <h4>Kings College of the Philippines</h4>
                         <p>Focusing on Database Management Systems, Web Development, Object-Oriented Programming, Multimedia Systems, and Information Security.</p>
@@ -373,7 +362,7 @@
                 <div class="timeline-item">
                     <div class="timeline-dot"><i class="fas fa-certificate"></i></div>
                     <div class="timeline-content glass-card">
-                        <span class="date">Achieved</span>
+                        <span class="date glass-badge">Achieved</span>
                         <h3>Certifications & Awards</h3>
                         <h4>Professional Milestones</h4>
                         <p>Civil Service Exam Passer. Recognized as a Hackathon Champion for innovative problem-solving and rapid prototype development under pressure.</p>
@@ -440,15 +429,15 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-content glass-card">
                 <div class="footer-logo">
                     <h2>MJ<span>.Flores</span></h2>
                     <p>IT Specialist & Developer</p>
                 </div>
                 <div class="footer-socials">
-                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#https://github.com/ryuuflores2006-crypto" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#https://www.facebook.com/markyyyylicious" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
